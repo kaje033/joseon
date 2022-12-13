@@ -1,0 +1,193 @@
+
+.home{width: 70px; margin-top: 60px; list-style: none;}
+.homelink {text-decoration: none;color: #fff;}
+.homelink:hover {text-decoration: none;color: #000;}
+
+.store{width: 70px; margin-top: 60px; list-style: none;}
+.storelink {text-decoration: none;color: #fff;}
+.storelink:hover {text-decoration: none;color: #000;}
+
+.discord{width: 70px; margin-top: 60px; list-style: none;}
+.discordlink {text-decoration: none;color: #fff;}
+.discordlink:hover {text-decoration: none;color: #000;}
+
+input[id="menuicon"] {display:none;}
+input[id="menuicon"] + label {display:block;margin:10px;width:60px;height:40px;position:relative;cursor:pointer;}
+input[id="menuicon"] + label span {display:block;position:absolute;width:100%;height:5px;border-radius:10px;background:#000;transition:all .35s;}
+input[id="menuicon"] + label span:nth-child(1) {top:0;}
+input[id="menuicon"] + label span:nth-child(2) {top:50%;transform:translateY(-50%);}
+input[id="menuicon"] + label span:nth-child(3) {bottom:0;}
+input[id="menuicon"]:checked + label {z-index:2;}
+input[id="menuicon"]:checked + label span {background:#fff;}
+input[id="menuicon"]:checked + label span:nth-child(1) {top:50%;transform:translateY(-50%) rotate(45deg);}
+input[id="menuicon"]:checked + label span:nth-child(2) {opacity:0;}
+input[id="menuicon"]:checked + label span:nth-child(3) {bottom:50%;transform:translateY(50%) rotate(-45deg);}
+div[class="sidebar"] {width:200px;height:100%;background:rgb(54, 57, 63);position:fixed;top:0;left:-300px;z-index:1;transition:all .35s;}
+input[id="menuicon"]:checked + label + div {left:0;}
+li{
+    display: inline;
+}
+
+.kr-payment-options .rmain {
+    padding: 5px;
+    height: auto;
+    width: 855px;
+    margin-left: 855px;
+}
+
+.kr-payment-options .rmain {
+    background-color: #fafafa;
+    position: relative;
+}
+
+.rmain {
+    overflow: hidden;
+}
+
+/*                */
+.price-point-row {
+    margin-top: 5px;
+}
+
+.price-point-row {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+.price-point-row dd {
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.price-point-row dl {
+    flex-basis: 90px;
+    margin: 0;
+}
+
+.price-point-row dt {
+    border-top: 1px solid #bebebe;
+    padding-top: 10px;
+    font-weight: 700;
+}
+
+.price-point-row ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.price-point-row li {
+    margin-left: 7px;
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.price-point.active{
+    border:2px solid #dc0000;
+    color: #dc0000;
+}
+
+.price-point {
+    color: #6c6c6c;
+    height: 182px;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.price-point .rp {
+    height: 61px;
+    background-color: #fff;
+}
+
+.price-point .name {
+    font-weight: 700;
+    font-size: 15px;
+    font-family: "Nanum Gothic",sans-serif;
+}
+
+.price-point .price {
+    margin-top: 10px;
+    padding-left: 12px;
+    font-size: 24px;
+}
+
+.price-point .amount {
+    font-size: 22px;
+    line-height: 63px;
+    font-weight: 700;
+    transform: scaleX(.9);
+    display: inline-block;
+    padding-left: 5px;
+}
+/*                        */
+.payment-method-row .card{
+    border: 2px solid #dc0000;
+}
+.payment-method-row {
+    margin-top: 5px;
+}
+
+.payment-method-row {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+.payment-method-row dd {
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.payment-method-row dl {
+    flex-basis: 90px;
+    margin: 0;
+}
+
+.payment-method-row dt {
+    border-top: 1px solid #bebebe;
+    padding-top: 10px;
+    font-weight: 700;
+}
+
+.payment-method-row ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.payment-method-row li {
+    margin-left: 7px;
+    flex-basis: 0;
+    flex-grow: 1;
+}
+/*                        */
+.kr-payment-options .button-row {
+    margin-top: 10px;
+}
+
+.kr-payment-options .button-row {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.btn-pay a {
+    background-position: -591px -446px;
+    width: 144px;
+    height: 45px;
+    background-image: url(btn.png);
+    background-repeat: no-repeat;
+    text-indent: -1px;
+    color: transparent;
+    font-size: 0;
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+    position: right;
+    border: none;
+}
