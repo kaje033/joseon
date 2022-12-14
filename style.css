@@ -24,9 +24,6 @@ input[id="menuicon"]:checked + label span:nth-child(2) {opacity:0;}
 input[id="menuicon"]:checked + label span:nth-child(3) {bottom:50%;transform:translateY(50%) rotate(-45deg);}
 div[class="sidebar"] {width:200px;height:100%;background:rgb(54, 57, 63);position:fixed;top:0;left:-300px;z-index:1;transition:all .35s;}
 input[id="menuicon"]:checked + label + div {left:0;}
-.body{
-    background-image: url(background.png);
-}
 li{
     display: inline;
 }
